@@ -1,4 +1,5 @@
 ﻿using System;
+using web1.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +11,12 @@ namespace web1.Controllers
     {
         public ActionResult Index()
         {
+            var myData = new HomeViewModel
+            {
+                PhoneCount = 10,
+                UserCount = 15,
+                LastAccessDate = DateTime.Now
+            };
             return View();
         }
 
