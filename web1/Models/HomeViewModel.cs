@@ -5,7 +5,10 @@ using System.Web;
 
 namespace web1.Models
 {
-    public class Class1
+    public class HomeViewModel
     {
+        public int PhoneCount;
+        public int UserCount;
+        public DateTime LastAccessDate;
     }
 }
